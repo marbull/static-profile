@@ -27,12 +27,11 @@ body {
   align-items: center;
   margin: 0 auto;
   padding: 0 4%;
-  max-width: 960px;
 }
 
 .site-title {
   padding: 8px 16px;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   color: #fff;
   background: #333c5e;
 }
@@ -47,7 +46,18 @@ body {
   list-style: none;
 }
 
+.list-item {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
 .list-item:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/* main */
+.main-visual img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
