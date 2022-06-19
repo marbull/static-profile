@@ -61,3 +61,47 @@ body {
   height: auto;
   object-fit: cover;
 }
+
+.self-introduction {
+  padding-top: 24px;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.introduce-icon {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.introduce {
+  margin: 0 auto;
+  width: 320px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .introduce-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .introduce-icon {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+  }
+
+  .introduce {
+    margin: 0;
+    text-align: left;
+  }
+}

@@ -1,7 +1,7 @@
 module Main exposing (..)
 
 import Browser
-import Html exposing (Html, div, h1, header, img, li, main_, nav, text, ul)
+import Html exposing (Html, div, h1, h2, h3, header, img, li, main_, nav, p, section, text, ul)
 import Html.Attributes exposing (alt, class, src)
 
 
@@ -49,7 +49,19 @@ view model =
             ]
         , main_ []
             [ div [ class "main-visual" ]
-                [ img [ src "/mainvisual.png", alt "Main Visual" ] []
+                [ img [ src "/mainvisual.png", alt "Main Visual" ] [] ]
+            , section []
+                [ h2 [ class "self-introduction" ] [ text "About" ]
+                , div [ class "introduce-wrapper" ]
+                    [ img [ class "introduce-icon", src "/aboutme.JPG", alt "About Me" ]
+                        []
+                    , div [ class "introduce" ]
+                        [ h3 []
+                            [ text "marbull" ]
+                        , p []
+                            [ text "Sumile Lab is a web development company that specializes in building web applications." ]
+                        ]
+                    ]
                 ]
             ]
         ]
