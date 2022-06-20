@@ -1,8 +1,8 @@
 module Main exposing (..)
 
 import Browser
-import Html exposing (Html, div, h1, h2, h3, header, img, li, main_, nav, p, section, text, ul)
-import Html.Attributes exposing (alt, class, src)
+import Html exposing (Html, a, div, h1, h2, h3, header, img, li, main_, nav, p, section, text, ul)
+import Html.Attributes exposing (alt, class, href, src, target)
 
 
 
@@ -60,6 +60,21 @@ view model =
                             [ text "marbull" ]
                         , p []
                             [ text "Sumile Lab is a web development company that specializes in building web applications." ]
+                        ]
+                    ]
+                ]
+            , section []
+                [ h2 [ class "contact-us" ] [ text "Contact" ]
+                , div [ class "contact-wrapper" ]
+                    [ img [ class "contact-icon", src "/Twitter-icon-blue.svg", alt "Contact-Us" ]
+                        []
+                    , div [ class "contact" ]
+                        [ h3 []
+                            [ a [ href "https://twitter.com/_marbull9929", target "_blank" ]
+                                [ text "_@marbull9929" ]
+                            ]
+                        , p []
+                            [ text "I,m a programmer and love to build web applications. If you want to contact me, please send a message. Thanks!" ]
                         ]
                     ]
                 ]
