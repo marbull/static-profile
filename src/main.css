@@ -98,6 +98,21 @@ a:hover {
   text-align: center;
 }
 
+.footer {
+  margin-top: 40px;
+  width: 100%;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  background: #333c5e;
+}
+
+.copyright {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: #fff;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
 
   .introduce-wrapper,

@@ -1,7 +1,7 @@
 module Main exposing (..)
 
 import Browser
-import Html exposing (Html, a, div, h1, h2, h3, header, img, li, main_, nav, p, section, text, ul)
+import Html exposing (Html, a, div, footer, h1, h2, h3, header, img, li, main_, nav, p, section, text, ul)
 import Html.Attributes exposing (alt, class, href, src, target)
 
 
@@ -77,6 +77,11 @@ view model =
                             [ text "I,m a programmer and love to build web applications. If you want to contact me, please send a message. Thanks!" ]
                         ]
                     ]
+                ]
+            ]
+        , footer [ class "footer" ]
+            [ p [ class "copyright" ]
+                [ text "Copyright © Sumile Lab. All rights reserved."
                 ]
             ]
         ]
